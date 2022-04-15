@@ -1,3 +1,4 @@
+import portfolio from "./img/portfolio.png"
 export  const products=[
     {
         id:1,
@@ -6,7 +7,7 @@ export  const products=[
     },
     {
         id:2,
-        img:"https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        img:portfolio,
         link:"https://google.com"
     },
     {
@@ -16,7 +17,7 @@ export  const products=[
     },
     {
         id:4,
-        img:"https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        img:portfolio,
         link:"https://google.com"
     },
     {

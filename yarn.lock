@@ -1126,6 +1126,11 @@
   dependencies:
     "postcss-value-parser" "^4.2.0"
 
+"@emailjs/browser@^3.6.2":
+  "integrity" "sha512-Swc8w+vwDX4XPy6tPegOFGSwHqNiEmEsIKbtAkqHo2WqnS0ORZUnnuZats2R3XqwfxNQD0F6RwnlVWHIMf6sCQ=="
+  "resolved" "https://registry.npmjs.org/@emailjs/browser/-/browser-3.6.2.tgz"
+  "version" "3.6.2"
+
 "@eslint/eslintrc@^1.2.1":
   "integrity" "sha512-bxvbYnBPN1Gibwyp6NrpnFzA3YtRL3BBAyEAFVIpNTm2Rn4Vy87GA5M4aSn3InRrlsbX5N0GW7XIx+U4SAEKdQ=="
   "resolved" "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.2.1.tgz"
@@ -3655,6 +3660,11 @@
   "integrity" "sha512-k0/r7GrWVL32kZlGwfPNgB2Y/mMXVTq/decgLczm/j34whdaspNrZO8CnXPf1laaHxI6ptUlsnAxN+UAPw+fzg=="
   "resolved" "https://registry.npmjs.org/email-addresses/-/email-addresses-3.1.0.tgz"
   "version" "3.1.0"
+
+"emailjs@^3.8.0":
+  "integrity" "sha512-ZLMFAC3C8GNebBvDpPgHwPeK4Ajx/rkq1TqLNFH9bC9TwEac1JhIYb3KuBY5eNfr0YVUaEfGughWszRBD5rcgQ=="
+  "resolved" "https://registry.npmjs.org/emailjs/-/emailjs-3.8.0.tgz"
+  "version" "3.8.0"
 
 "emittery@^0.8.1":
   "integrity" "sha512-uDfvUjVrfGJJhymx/kz6prltenw1u7WrCg1oa94zYY8xxVpLLUu045LAT0dhDZdXG58/EpPL/5kA180fQ/qudg=="

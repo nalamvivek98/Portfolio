@@ -1,0 +1,12 @@
+.m {
+  background-color: pink;
+  border-radius: 0px 30% 30% 0px;
+  display: flex;
+  position: fixed;
+  height: 50vh;
+  width: 5vw;
+  left: 0;
+  top: 25vh;
+  flex-direction: column;
+  z-index: 999;
+}

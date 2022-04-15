@@ -11,7 +11,7 @@ let productlist=products.map(item=>{
 })
 
   return (
-    <div className='pl'>
+    <div className='pl' id="products">
         <div className='pl-texts'>
             <h1 className='pl-title'>
                 Create & inspire.Its Vivek

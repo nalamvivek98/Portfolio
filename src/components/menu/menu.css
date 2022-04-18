@@ -10,3 +10,8 @@
   flex-direction: column;
   z-index: 999;
 }
+@media screen and (max-width: 480px) {
+  .m {
+    display: none;
+  }
+}

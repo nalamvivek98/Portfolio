@@ -31,7 +31,7 @@ const Contact = () => {
         <div className='c-bg'></div>
         <div className="c-wrapper">
             <div className="c-left">
-                <h1 className='c-title'>Let's discuss your project</h1>
+                <h1 className='c-title'>Contact Information</h1>
                 <div className="c-info">
                     <div className="c-info-item">
                         <img className='c-icon' src={cell} alt="Call" />+919603036878
@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
             <div className="c-right">
                 <p className='c-desc'>
-                    <b>whats your story?</b> Get  in the right project
+                    {/* <b>Want to connect ?</b> */}
                 </p>
                 <form ref={formRef} onSubmit={handleSubmit} >
                     <input style={{backgroundColor:darkMode && "#333",color:"white" }} type="text" placeholder='Name' name='user_name'/>

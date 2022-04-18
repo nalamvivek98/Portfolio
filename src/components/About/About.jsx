@@ -1,6 +1,5 @@
 import React from 'react'
 import "./about.css"
-import py from "../../img/py.jpg"
 const About = () => {
   return (
     <div className='a' id="about">
@@ -13,21 +12,34 @@ const About = () => {
         <div className="a-right">
            <h1 className='a-title'>About me</h1> 
            <p className='a-sub'>
-               It is a long established fact that a reader will be readable content. 
-           </p>
+               <h2>Education</h2>
+               <br />
+               <p><b>BTECH - VR SIDDARTHA ENGINEERING COLLEGE -(CGPA-8.45/10)</b></p>
+               <br />
+              <h2>Awards And Achievements</h2>
+         
 
-           <p className='a-desc'>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quam qui adipisci, nulla minima rerum esse libero vel voluptatibus aperiam praesentium. Sint recusandae adipisci modi, consequatur et fugiat ex dicta.
-               Provident, molestiae?
-           </p>
-
+              <ul>
+                  <li>
            <div className="a-award">
-               <img src={py} alt=""  className='a-award-img'/>
+               
                <div className="a-award-texts">
-               <h4 className="a-award-title">TOP 5% in Programming,Data Structures And Algorithms Using Python</h4>
-               <div className="a-award-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit obcaecati nihil autem, quis rem aperiam voluptatem. Dolorem omnis fuga quos dolorum sunt commodi voluptate fugit, sequi voluptas illum ab ipsa!</div>
+               <h4 className="a-award-title">Won 3rd prize in the  Engineer’s Day competition</h4>
+               <div className="a-award-desc">I Participated in both 2nd year and 3rd year for Engineer’s Day competition organized by the CSE department of our college, Where I took as a challenge and secured 3rd prize in the 3rd year. </div>
                </div> 
            </div>
+           </li>
+<li>
+           <div className="a-award">
+              
+               <div className="a-award-texts">
+               <h4 className="a-award-title">TOP 5% in Programming,Data Structures And Algorithms Using Python </h4>
+               <div className="a-award-desc">Secured top 5% in the Programming ,Data and Algorithms using python. </div>
+               </div> 
+           </div>
+           </li>
+           </ul>
+           </p>
         </div>
     </div>
   )

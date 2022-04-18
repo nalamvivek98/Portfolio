@@ -14,11 +14,11 @@ let productlist=products.map(item=>{
     <div className='pl' id="products">
         <div className='pl-texts'>
             <h1 className='pl-title'>
-                Create & inspire.Its Vivek
+             Work and  Projects 
 
             </h1>
             <p className='pl-desc'>
-                puzzle is a game which helps users to play,enjoy and relax.
+                Building projects is fun and we can learn and build our network while contributing to projects through online.
 
             </p>
         </div>

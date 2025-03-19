@@ -3,7 +3,7 @@ import "./intro.css"
 import me from "../../img/me.png"
 import { ThemeContext } from '../../context'
 import { useContext } from 'react'
-import resume from "../../docs/Resume.pdf"
+
 
 
 function Intro(){
@@ -24,11 +24,13 @@ function Intro(){
                 </div>
             </div>
             <p className="i-desc">
-                I enjoy designing and developing applications in different technologies, loves to travel the world and interact with people. Enjoys cooking and to be with friends and family.
-            </p>
+            I enjoy designing and developing applications across various technologies. I love traveling the world, meeting new people, and exploring different cultures. Cooking is a passion of mine, and I cherish spending quality time with friends and family.  </p>
             <div className="links">
-           <a href="../../docs/Resume.pdf"  >resume</a>
-            </div>
+            <a href="/Resume.pdf" type="application/pdf" download="Resume.pdf">
+  Download Resume
+</a>
+
+  </div>
             </div>
           
      {/* <svg width="75" height="75px" viewBox="0 0 25 25" fill="none" stroke={theme.state.darkMode?"white":"black"} className='i-scroll' xmlns="http://www.w3.org/2000/svg">

@@ -1,5 +1,8 @@
 import React from 'react'
 import "./menu.css"
+import { FiDownload } from "react-icons/fi";
+
+
 
 const Menu = () => {
   return (
@@ -10,6 +13,7 @@ const Menu = () => {
        <a href="#contact"><img src="" alt="" />Contact</a>
 
     </div>
+
   )
 }
 

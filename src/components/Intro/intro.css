@@ -1,74 +1,76 @@
 .i {
   display: flex;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Left Section */
 .i-left {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.i-left-wrapper {
-  padding: 10px 100px;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
-.i-right {
-  flex: 1;
-  position: relative;
+.i-left-wrapper {
+  padding: 50px;
+  max-width: 500px;
 }
 
 .i-intro {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 300;
+  opacity: 0.8;
 }
 
 .i-name {
-  font-size: 60px;
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffcc70, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.i-name:hover {
+  transform: scale(1.05);
 }
 
 .i-title {
-  height: 30px;
+  margin-top: 10px;
+  height: 35px;
   overflow: hidden;
-  padding: 5px 0px;
-}
-.i-title-item {
-  height: 50px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #59b256;
-
-  display: flex;
-  align-items: center;
-}
-
-.i-img {
-  width: 100%;
-  object-fit: contain;
-  height: 100%;
-  position: absolute;
-}
-
-.i-bg {
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-  background-color: rgba(119, 0, 255, 0.534);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
 }
 
 .i-title-wrapper {
-  height: 100%;
-  animation: move 10s ease-in-out infinite alternate;
+  display: flex;
+  flex-direction: column;
+  animation: move 6s infinite ease-in-out;
 }
 
+.i-title-item {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  color: #59b256;
+  padding: 5px 0;
+}
+
+/* Keyframe Animation for Title */
 @keyframes move {
+  0% {
+    transform: translateY(0);
+  }
   33% {
     transform: translateY(-50px);
   }
@@ -80,23 +82,136 @@
   }
 }
 
-.i-scroll {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: 20px;
+.i-desc {
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 15px;
+  opacity: 0.5;
 }
-@media screen and (max-width: 480px) {
+
+/* Resume Download Button */
+.links {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.resume-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffcc70, #ff6b6b);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resume-button:hover {
+  background: linear-gradient(135deg, #ffb347, #ff4848);
+  transform: scale(1.1);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.i-desc {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Right Section */
+.i-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Background Effect */
+.i-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, rgba(0, 0, 0, 0) 80%);
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: glow 5s infinite alternate;
+}
+
+/* Profile Image Container */
+.i-profile-container {
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.i-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.i-img:hover {
+  transform: scale(1.1);
+}
+
+/* Glowing Background Animation */
+@keyframes glow {
+  0% {
+    filter: blur(60px);
+    opacity: 0.4;
+  }
+  100% {
+    filter: blur(80px);
+    opacity: 0.7;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
   .i {
     flex-direction: column;
+    text-align: center;
+    padding: 20px;
   }
+
   .i-left-wrapper {
-    padding: 45px 15px;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    padding: 20px;
   }
-  .i-desc {
-    display: none;
+
+  .i-title-wrapper {
+    height: auto;
+  }
+
+  .i-right {
+    margin-top: 20px;
+  }
+
+  .i-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .resume-button {
+    width: 40px;
+    height: 40px;
   }
 }
